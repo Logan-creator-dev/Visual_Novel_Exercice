@@ -17,3 +17,5 @@ MonoBehaviour:
   ChoiceData:
   - Choice: Prendre et continuer
     LinkedThumbnail: {fileID: 0}
+    NeededItem: {fileID: 0}
+  GivenItem: {fileID: 11400000, guid: 032e3b988d0a9dc40a64dbe8cf67f6b4, type: 2}

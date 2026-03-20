@@ -17,7 +17,11 @@ MonoBehaviour:
   ChoiceData:
   - Choice: "Revenir vers le c\xF4t\xE9 obscure"
     LinkedThumbnail: {fileID: 11400000, guid: 422572c3664bcde41badcdb33a5aed0c, type: 2}
+    NeededItem: {fileID: 0}
   - Choice: devenir un jedi
     LinkedThumbnail: {fileID: 11400000, guid: a7962f1f705422b41a40977059444546, type: 2}
+    NeededItem: {fileID: 0}
   - Choice: Rejoindre l'aliance rebelle
     LinkedThumbnail: {fileID: 11400000, guid: a7962f1f705422b41a40977059444546, type: 2}
+    NeededItem: {fileID: 0}
+  GivenItem: {fileID: 0}

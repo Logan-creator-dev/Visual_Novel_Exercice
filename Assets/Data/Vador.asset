@@ -15,5 +15,8 @@ MonoBehaviour:
   ThumbnailImage: {fileID: 21300000, guid: c12d14f49b882e341bde24d6cc94feb6, type: 3}
   Description: "Vous vous retrouvez face \xE0 Dark Vador"
   ChoiceData:
-  - Choice: retournez avec Vador
+  - Choice: allez avec Luke
     LinkedThumbnail: {fileID: 11400000, guid: d27c84410e56fa44c84087bab47f0820, type: 2}
+  StuffData:
+  - Choice: 
+    LinkedThumbnail: {fileID: 0}

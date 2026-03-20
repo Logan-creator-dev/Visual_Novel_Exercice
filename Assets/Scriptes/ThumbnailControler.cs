@@ -1,4 +1,6 @@
+using System.Collections.Generic;
 using TMPro;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -6,15 +8,20 @@ public class ThumbnailController : MonoBehaviour {
     
     [SerializeField] private ThumbnailData _firstThumbnail;
     [SerializeField] private GameObject _buttonPrefab;
+    [SerializeField] private Transform _itemPanelTransform;
+    
     
     [SerializeField] private Image _thumbnail;
     [SerializeField] private TMP_Text _description;
     [SerializeField] private Transform _choicePanelTransform;
-    
+
+    public List<ItemData> Inventory = new();
 
     private void Start() {
         DisplayThumbnail(_firstThumbnail);
     }
+
+   
 
     private void DisplayThumbnail(ThumbnailData data) {
         _thumbnail.sprite = data.ThumbnailImage;
@@ -35,6 +42,7 @@ public class ThumbnailController : MonoBehaviour {
             });
         }
         
-        
     }
+
+    Inventory.Add(GivenItem);
 }
