@@ -21,12 +21,10 @@ public class ThumbnailController : MonoBehaviour {
         DisplayThumbnail(_firstThumbnail);
     }
 
-   
-
+    
     private void DisplayThumbnail(ThumbnailData data) {
         _thumbnail.sprite = data.ThumbnailImage;
         _description.text = data.Description;
-        
         
         // Clear choices
         foreach (Transform child in _choicePanelTransform) {
@@ -41,8 +39,10 @@ public class ThumbnailController : MonoBehaviour {
                 DisplayThumbnail(choiceData.LinkedThumbnail);
             });
         }
-        
     }
 
-    Inventory.Add(GivenItem);
+    public void AddItem(ItemData GivenItem)
+    {
+        Inventory.Add(GivenItem);
+    }
 }
