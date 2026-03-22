@@ -254,7 +254,8 @@ MonoBehaviour:
   _thumbnail: {fileID: 1907099760}
   _description: {fileID: 910278749}
   _choicePanelTransform: {fileID: 1140426877}
-  Inventory: []
+  Inventory:
+  - {fileID: 0}
 --- !u!114 &199320860
 MonoBehaviour:
   m_ObjectHideFlags: 0
