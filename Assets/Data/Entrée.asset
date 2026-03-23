@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33033b8424a1415d910d7fd0c51e15f4, type: 3}
+  m_Name: "Entr\xE9e"
+  m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
+  ThumbnailImage: {fileID: 21300000, guid: 3a83e71b7c092a44887be5cb16070c47, type: 3}
+  Description: "Bien jou\xE9 tu as stationn\xE9 ton vaisseau sans te faire rep\xE9rer"
+  ChoiceData:
+  - Choice: 'choisir le couloir de gauche '
+    LinkedThumbnail: {fileID: 11400000, guid: 3097b878c1365904cb3da1faebc1b75f, type: 2}
+    NeededItem: {fileID: 0}
+  - Choice: choisir le couloir tout droit
+    LinkedThumbnail: {fileID: 11400000, guid: 525a94cdd02dbc8439fc33e223de8a4d, type: 2}
+    NeededItem: {fileID: 0}
+  GivenItem: {fileID: 0}

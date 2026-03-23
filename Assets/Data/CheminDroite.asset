@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33033b8424a1415d910d7fd0c51e15f4, type: 3}
+  m_Name: CheminDroite
+  m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
+  ThumbnailImage: {fileID: 21300000, guid: 7245ee6c545de87408077f5363532ab3, type: 3}
+  Description: tu arrives dans une salle de commande
+  ChoiceData:
+  - Choice: "aller au deuxi\xE8me chemin"
+    LinkedThumbnail: {fileID: 11400000, guid: 233a7ec5db4a6c24fa1e7a8d961b994d, type: 2}
+    NeededItem: {fileID: 0}
+    GivenItem: {fileID: 0}
+  - Choice: Fouiller la salle
+    LinkedThumbnail: {fileID: 11400000, guid: e67f23ea76851494a9c1593b9847c5f4, type: 2}
+    NeededItem: {fileID: 0}
+    GivenItem: {fileID: 0}
+  GivenItem: {fileID: 0}

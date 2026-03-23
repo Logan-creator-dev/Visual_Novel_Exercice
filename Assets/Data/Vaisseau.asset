@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33033b8424a1415d910d7fd0c51e15f4, type: 3}
-  m_Name: Gun
+  m_Name: Vaisseau
   m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
-  ThumbnailImage: {fileID: 21300000, guid: 242096ca3ce89904c941844e3d3f1c66, type: 3}
-  Description: "Tu re\xE7ois un blaster"
+  ThumbnailImage: {fileID: 21300000, guid: 8e1c5ca448cd16540947d4c49b6277d0, type: 3}
+  Description: "Tu as atteint l'\xE9toile de la mort tu dois te poser dessus discretement
+    pour la d\xE9truire de l'int\xE9rieu eet sauver Leia"
   ChoiceData:
-  - Choice: Prendre et continuer
-    LinkedThumbnail: {fileID: 0}
+  - Choice: "rejoindre l'\xE9toile de la mort"
+    LinkedThumbnail: {fileID: 11400000, guid: 233a7ec5db4a6c24fa1e7a8d961b994d, type: 2}
     NeededItem: {fileID: 0}
-  GivenItem: {fileID: 11400000, guid: 7b931b763697a6e45a0d003b312b8655, type: 2}
+  GivenItem: {fileID: 0}

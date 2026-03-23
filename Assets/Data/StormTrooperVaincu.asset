@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33033b8424a1415d910d7fd0c51e15f4, type: 3}
+  m_Name: StormTrooperVaincu
+  m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
+  ThumbnailImage: {fileID: 21300000, guid: 112eea89292321244bd3c871e47702e2, type: 3}
+  Description: "tu as r\xE9ussi \xE0 vaicnre les StromTrooper"
+  ChoiceData:
+  - Choice: "R\xE9cuperer leur tenues"
+    LinkedThumbnail: {fileID: 11400000, guid: 85dcd1e9301313b4c982e56e3ee9ad90, type: 2}
+    NeededItem: {fileID: 0}
+    GivenItem: {fileID: 0}
+  - Choice: continuer ta route
+    LinkedThumbnail: {fileID: 11400000, guid: f8f94e85ac3cc8c4f84d8bbc8f879591, type: 2}
+    NeededItem: {fileID: 0}
+    GivenItem: {fileID: 0}
+  GivenItem: {fileID: 0}

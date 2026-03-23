@@ -11,7 +11,7 @@ public class ThumbnailController : MonoBehaviour
     [SerializeField] private ThumbnailData _firstThumbnail;
     [SerializeField] private GameObject _buttonPrefab;
     [SerializeField] private Transform _itemPanelTransform;
-
+    [SerializeField] private InventoryUpdate _inventoryUpdate;
 
     [SerializeField] private Image _thumbnail;
     [SerializeField] private TMP_Text _description;
@@ -32,7 +32,7 @@ public class ThumbnailController : MonoBehaviour
 
          if (data.GivenItem != null)
          {
-             AddItem(data.GivenItem);
+             _inventoryUpdate.AddItem(data.GivenItem);
          } 
 
         // Clear choices
@@ -47,7 +47,12 @@ public class ThumbnailController : MonoBehaviour
              if (choiceData.NeededItem != null && !Inventory.Contains(choiceData.NeededItem))
              {
                  continue;
-             } 
+             }
+
+             // if (choiceData.GivenItem != true && !Inventory.Contains(choiceData.GivenItem))
+             // {
+             //     Destroy(_buttonPrefab.gameObject);
+             // }
                 
              GameObject instantiate = Instantiate(_buttonPrefab, _choicePanelTransform);
              instantiate.GetComponentInChildren<TextMeshProUGUI>().text = choiceData.Choice;
@@ -55,14 +60,6 @@ public class ThumbnailController : MonoBehaviour
              {
                  DisplayThumbnail(choiceData.LinkedThumbnail);
              });
-        }
-    }
-
-    public void AddItem(ItemData GivenItem)
-    {
-        if (!Inventory.Contains(GivenItem))
-        {
-            Inventory.Add(GivenItem);
         }
     }
 }  
