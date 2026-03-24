@@ -16,3 +16,4 @@ MonoBehaviour:
   Description: tu te rerouves prisonnier....GAME OVER
   ChoiceData: []
   GivenItem: {fileID: 0}
+  isBadEnding: 1

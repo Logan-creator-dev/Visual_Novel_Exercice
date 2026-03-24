@@ -28,4 +28,4 @@ MonoBehaviour:
     NeededItem: {fileID: 11400000, guid: 7b931b763697a6e45a0d003b312b8655, type: 2}
     HideIfMissingItem: 1
   GivenItem: {fileID: 0}
-  isBadEnding: 1
+  isBadEnding: 0

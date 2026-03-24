@@ -1,8 +1,7 @@
-using System.Collections.Generic;
+using System;
 using TMPro;
-using UnityEditor;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ThumbnailController : MonoBehaviour
@@ -23,7 +22,6 @@ public class ThumbnailController : MonoBehaviour
     {
         DisplayThumbnail(_firstThumbnail);
     }
-
 
     private void DisplayThumbnail(ThumbnailData data)
     {
@@ -50,11 +48,7 @@ public class ThumbnailController : MonoBehaviour
              {
                  continue;
              }
-             /*if (choiceData.LinkedThumbnail.GivenItem != null &&
-                 InventoryUpdate.Inventory.Contains(choiceData.LinkedThumbnail.GivenItem))
-             {
-                 continue;
-             }*/
+             
              GameObject instantiate = Instantiate(_buttonPrefab, _choicePanelTransform);
              instantiate.GetComponentInChildren<TextMeshProUGUI>().text = choiceData.Choice;
              instantiate.GetComponent<Button>().onClick.AddListener(() =>
@@ -70,8 +64,6 @@ public class ThumbnailController : MonoBehaviour
                  var text = instantiate.GetComponentInChildren<TextMeshProUGUI>();
                  text.color = Color.gray;
              }
-             
-             
         }
 
         if (data.isBadEnding)
@@ -86,9 +78,7 @@ public class ThumbnailController : MonoBehaviour
     
     public void RestartGame()
     {
-        InventoryUpdate.Inventory.Clear();
-        inventoryUpdate.RenderInventory();
-        DisplayThumbnail(_firstThumbnail);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }  
    

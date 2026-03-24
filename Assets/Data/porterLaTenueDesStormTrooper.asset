@@ -15,7 +15,9 @@ MonoBehaviour:
   ThumbnailImage: {fileID: 21300000, guid: fe11ada82ecadf7449f43f9ce343568f, type: 3}
   Description: "tu te d\xE9guise en StormTrooper tu vas pouvoir passer inaper\xE7u"
   ChoiceData:
-  - Choice: coNtinuer tout droit
-    LinkedThumbnail: {fileID: 11400000, guid: f8f94e85ac3cc8c4f84d8bbc8f879591, type: 2}
+  - Choice: continuer tout droit
+    LinkedThumbnail: {fileID: 11400000, guid: e1d360ea02cb89246bb8fc485e55b317, type: 2}
     NeededItem: {fileID: 0}
+    HideIfMissingItem: 1
   GivenItem: {fileID: 11400000, guid: 0a065afeed0408746b270993699bd9eb, type: 2}
+  isBadEnding: 0

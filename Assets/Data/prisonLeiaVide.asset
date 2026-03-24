@@ -16,7 +16,12 @@ MonoBehaviour:
   Description: 
   ChoiceData:
   - Choice: "repatir en arri\xE8re"
+    LinkedThumbnail: {fileID: 11400000, guid: 1009f0480c055ee49843249dc9b0239e, type: 2}
+    NeededItem: {fileID: 0}
+    HideIfMissingItem: 0
+  - Choice: repatir en en avant
     LinkedThumbnail: {fileID: 11400000, guid: a236ca150064acf4da69bfb68dec64cf, type: 2}
     NeededItem: {fileID: 0}
-    GivenItem: {fileID: 0}
+    HideIfMissingItem: 0
   GivenItem: {fileID: 0}
+  isBadEnding: 0

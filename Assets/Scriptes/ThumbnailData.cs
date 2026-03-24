@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "newThumbnail", menuName = "Thumbnail")]
@@ -9,4 +10,5 @@ public class ThumbnailData : ScriptableObject
     public List<ChoiceData> ChoiceData;
     public ItemData GivenItem;
     public bool isBadEnding;
+
 }

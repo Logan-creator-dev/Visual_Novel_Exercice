@@ -16,6 +16,8 @@ MonoBehaviour:
   Description: 'tu tombes sur un blaster '
   ChoiceData:
   - Choice: Prendre et continuer
-    LinkedThumbnail: {fileID: 0}
+    LinkedThumbnail: {fileID: 11400000, guid: a5da545f8cafb6d41a81af499a60517b, type: 2}
     NeededItem: {fileID: 0}
+    HideIfMissingItem: 0
   GivenItem: {fileID: 11400000, guid: 7b931b763697a6e45a0d003b312b8655, type: 2}
+  isBadEnding: 0
