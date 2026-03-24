@@ -10,13 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33033b8424a1415d910d7fd0c51e15f4, type: 3}
-  m_Name: Vaisseau
+  m_Name: "Entr\xE9eFin"
   m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
-  ThumbnailImage: {fileID: 21300000, guid: 8e1c5ca448cd16540947d4c49b6277d0, type: 3}
-  Description: "Tu as atteint l'\xE9toile de la mort tu dois te poser dessus discr\xE9tement
-    pour  sauver Leia"
+  ThumbnailImage: {fileID: 21300000, guid: 3a83e71b7c092a44887be5cb16070c47, type: 3}
+  Description: "tu as r\xE9ussi \xE0 sortir sans faire sonner l'alarme prend ton
+    vaisseau et pars"
   ChoiceData:
-  - Choice: "rejoindre l'\xE9toile de la mort"
+  - Choice: 'prendre le vaisseau et partir '
+    LinkedThumbnail: {fileID: 11400000, guid: 54e3ebcb2cf88304bbde76348ff10b6e, type: 2}
+    NeededItem: {fileID: 11400000, guid: e53fb0a0fe93f764caa325de49fb86a4, type: 2}
+  - Choice: "r\xE9explorer "
     LinkedThumbnail: {fileID: 11400000, guid: 233a7ec5db4a6c24fa1e7a8d961b994d, type: 2}
     NeededItem: {fileID: 0}
   GivenItem: {fileID: 0}

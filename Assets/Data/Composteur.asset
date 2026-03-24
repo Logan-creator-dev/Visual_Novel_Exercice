@@ -13,6 +13,12 @@ MonoBehaviour:
   m_Name: Composteur
   m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
   ThumbnailImage: {fileID: 21300000, guid: 884e6281a1f82084f8ae04d86a4dc574, type: 3}
-  Description: 
-  ChoiceData: []
+  Description: tu tombeS dans le composteur les mure se referment sors vite
+  ChoiceData:
+  - Choice: "fouiller les d\xE9chets"
+    LinkedThumbnail: {fileID: 11400000, guid: 77c79947a764f4547b4f2e03d8d085db, type: 2}
+    NeededItem: {fileID: 0}
+  - Choice: 'sortir vite '
+    LinkedThumbnail: {fileID: 11400000, guid: a5da545f8cafb6d41a81af499a60517b, type: 2}
+    NeededItem: {fileID: 0}
   GivenItem: {fileID: 0}

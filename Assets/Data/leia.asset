@@ -19,9 +19,7 @@ MonoBehaviour:
   - Choice: prendre le couloir devant toi
     LinkedThumbnail: {fileID: 11400000, guid: 1009f0480c055ee49843249dc9b0239e, type: 2}
     NeededItem: {fileID: 0}
-    GivenItem: {fileID: 0}
   - Choice: "retourner en arri\xE8re et prendre la porte de droite"
     LinkedThumbnail: {fileID: 11400000, guid: a236ca150064acf4da69bfb68dec64cf, type: 2}
     NeededItem: {fileID: 0}
-    GivenItem: {fileID: 0}
-  GivenItem: {fileID: 0}
+  GivenItem: {fileID: 11400000, guid: e53fb0a0fe93f764caa325de49fb86a4, type: 2}

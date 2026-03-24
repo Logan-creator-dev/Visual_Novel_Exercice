@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Prisonnier
   m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
   ThumbnailImage: {fileID: 21300000, guid: 6dbd03af5df82a042b2f7fa933b2dcb4, type: 3}
-  Description: 
+  Description: tu te rerouves prisonnier....GAME OVER
   ChoiceData: []
   GivenItem: {fileID: 0}

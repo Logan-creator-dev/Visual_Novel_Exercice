@@ -19,9 +19,7 @@ MonoBehaviour:
   - Choice: "retourner en arri\xE8re"
     LinkedThumbnail: {fileID: 11400000, guid: 36ab2ea69e57bd947881844c93cd1134, type: 2}
     NeededItem: {fileID: 0}
-    GivenItem: {fileID: 0}
   - Choice: attaquer les StormTrooper
-    LinkedThumbnail: {fileID: 0}
+    LinkedThumbnail: {fileID: 11400000, guid: a0e638fd450a51c46a6670ded5de4fa3, type: 2}
     NeededItem: {fileID: 0}
-    GivenItem: {fileID: 0}
   GivenItem: {fileID: 0}

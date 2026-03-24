@@ -9,7 +9,7 @@ public class InventoryUpdate : MonoBehaviour
     [SerializeField] private Transform _itemPanelTransform;
 
     
-    public List<ItemData> Inventory = new();
+    public static List<ItemData> Inventory = new();
 
     public void AddItem(ItemData GivenItem)
     {

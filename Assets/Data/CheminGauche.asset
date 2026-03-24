@@ -18,13 +18,10 @@ MonoBehaviour:
   - Choice: 'aller tout droit '
     LinkedThumbnail: {fileID: 11400000, guid: 480ccf5716313fa49af31c37e2ec8bfc, type: 2}
     NeededItem: {fileID: 11400000, guid: 51925623beebe1c4cac2a5eeb839f864, type: 2}
-    GivenItem: {fileID: 0}
   - Choice: 'prendre celle de droite '
     LinkedThumbnail: {fileID: 11400000, guid: a236ca150064acf4da69bfb68dec64cf, type: 2}
     NeededItem: {fileID: 0}
-    GivenItem: {fileID: 0}
-  - Choice: "aller \xE0 l'autre chemin "
+  - Choice: 'Prendre l''autre chemin '
     LinkedThumbnail: {fileID: 11400000, guid: 525a94cdd02dbc8439fc33e223de8a4d, type: 2}
     NeededItem: {fileID: 0}
-    GivenItem: {fileID: 11400000, guid: 51925623beebe1c4cac2a5eeb839f864, type: 2}
   GivenItem: {fileID: 0}

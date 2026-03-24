@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33033b8424a1415d910d7fd0c51e15f4, type: 3}
-  m_Name: Vaisseau
+  m_Name: SalleDeCommandeComposteurAvecTenue
   m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
-  ThumbnailImage: {fileID: 21300000, guid: 8e1c5ca448cd16540947d4c49b6277d0, type: 3}
-  Description: "Tu as atteint l'\xE9toile de la mort tu dois te poser dessus discr\xE9tement
-    pour  sauver Leia"
+  ThumbnailImage: {fileID: 21300000, guid: 5afeee8124bf50c4bad72c3715b47117, type: 3}
+  Description: "tu passes inaper\xE7u dans la salle des commandes"
   ChoiceData:
-  - Choice: "rejoindre l'\xE9toile de la mort"
-    LinkedThumbnail: {fileID: 11400000, guid: 233a7ec5db4a6c24fa1e7a8d961b994d, type: 2}
-    NeededItem: {fileID: 0}
+  - Choice: continuer
+    LinkedThumbnail: {fileID: 11400000, guid: 2fbd77b916e7e1c48a214d9a7d937da0, type: 2}
+    NeededItem: {fileID: 11400000, guid: 0a065afeed0408746b270993699bd9eb, type: 2}
   GivenItem: {fileID: 0}

@@ -8,4 +8,5 @@ public class ThumbnailData : ScriptableObject
     public  string Description;
     public List<ChoiceData> ChoiceData;
     public ItemData GivenItem;
+    public bool isBadEnding;
 }

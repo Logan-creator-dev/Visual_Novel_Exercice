@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 33033b8424a1415d910d7fd0c51e15f4, type: 3}
-  m_Name: Vaisseau
+  m_Name: tunnelComposteur
   m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
-  ThumbnailImage: {fileID: 21300000, guid: 8e1c5ca448cd16540947d4c49b6277d0, type: 3}
-  Description: "Tu as atteint l'\xE9toile de la mort tu dois te poser dessus discr\xE9tement
-    pour  sauver Leia"
+  ThumbnailImage: {fileID: 21300000, guid: b931a8f78a92e5c4a8656bb595ee0364, type: 3}
+  Description: tu arrives dans le tunnel et vois une trape
   ChoiceData:
-  - Choice: "rejoindre l'\xE9toile de la mort"
-    LinkedThumbnail: {fileID: 11400000, guid: 233a7ec5db4a6c24fa1e7a8d961b994d, type: 2}
+  - Choice: ouvrir la trape et sauter
+    LinkedThumbnail: {fileID: 11400000, guid: 107c094f32e073b4fa5d64fb8d8ade59, type: 2}
     NeededItem: {fileID: 0}
   GivenItem: {fileID: 0}

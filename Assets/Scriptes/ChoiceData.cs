@@ -8,5 +8,10 @@ public struct ChoiceData
     public string Choice;
     public ThumbnailData LinkedThumbnail;
     public ItemData NeededItem;
-    // public ItemData GivenItem;
+    public bool HideIfMissingItem;
+
+    private void OnEnable()
+    {
+        if (HideIfMissingItem) HideIfMissingItem = true;
+    }
 }

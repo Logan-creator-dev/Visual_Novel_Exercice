@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Gun
   m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
   ThumbnailImage: {fileID: 21300000, guid: 242096ca3ce89904c941844e3d3f1c66, type: 3}
-  Description: "Tu re\xE7ois un blaster"
+  Description: 'tu tombes sur un blaster '
   ChoiceData:
   - Choice: Prendre et continuer
     LinkedThumbnail: {fileID: 0}

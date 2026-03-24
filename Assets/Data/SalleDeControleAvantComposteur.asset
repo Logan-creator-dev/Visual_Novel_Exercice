@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: SalleDeControleAvantComposteur
   m_EditorClassIdentifier: Assembly-CSharp::ThumbnailData
   ThumbnailImage: {fileID: 0}
-  Description: 
-  ChoiceData: []
+  Description: "tu n'as pas de camouflage tu te fais rep\xE9rer"
+  ChoiceData:
+  - Choice: se rendre
+    LinkedThumbnail: {fileID: 11400000, guid: 9eb4f9fa757ea114eb564a8857014900, type: 2}
+    NeededItem: {fileID: 0}
   GivenItem: {fileID: 0}

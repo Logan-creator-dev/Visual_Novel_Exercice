@@ -11,14 +11,14 @@ public class ThumbnailController : MonoBehaviour
     [SerializeField] private ThumbnailData _firstThumbnail;
     [SerializeField] private GameObject _buttonPrefab;
     [SerializeField] private Transform _itemPanelTransform;
-    [SerializeField] private InventoryUpdate _inventoryUpdate;
-
+    [SerializeField] private InventoryUpdate inventoryUpdate;
+    [SerializeField] private GameObject restartButton;
+    
+    
     [SerializeField] private Image _thumbnail;
     [SerializeField] private TMP_Text _description;
     [SerializeField] private Transform _choicePanelTransform;
-
-    public List<ItemData> Inventory = new();
-
+    
     private void Start()
     {
         DisplayThumbnail(_firstThumbnail);
@@ -32,7 +32,7 @@ public class ThumbnailController : MonoBehaviour
 
          if (data.GivenItem != null)
          {
-             _inventoryUpdate.AddItem(data.GivenItem);
+             inventoryUpdate.AddItem(data.GivenItem);
          } 
 
         // Clear choices
@@ -44,23 +44,51 @@ public class ThumbnailController : MonoBehaviour
         // Instantiate choices
         foreach (ChoiceData choiceData in data.ChoiceData)
         {
-             if (choiceData.NeededItem != null && !Inventory.Contains(choiceData.NeededItem))
+             bool hasItem = choiceData.NeededItem == null || InventoryUpdate.Inventory.Contains(choiceData.NeededItem);
+
+             if (!hasItem && choiceData.HideIfMissingItem)
              {
                  continue;
              }
-
-             // if (choiceData.GivenItem != true && !Inventory.Contains(choiceData.GivenItem))
-             // {
-             //     Destroy(_buttonPrefab.gameObject);
-             // }
-                
+             /*if (choiceData.LinkedThumbnail.GivenItem != null &&
+                 InventoryUpdate.Inventory.Contains(choiceData.LinkedThumbnail.GivenItem))
+             {
+                 continue;
+             }*/
              GameObject instantiate = Instantiate(_buttonPrefab, _choicePanelTransform);
              instantiate.GetComponentInChildren<TextMeshProUGUI>().text = choiceData.Choice;
              instantiate.GetComponent<Button>().onClick.AddListener(() =>
              {
                  DisplayThumbnail(choiceData.LinkedThumbnail);
              });
+
+             if (!hasItem)
+             {
+                 Button btn = instantiate.GetComponent<Button>();
+                 btn.interactable = false;
+                 
+                 var text = instantiate.GetComponentInChildren<TextMeshProUGUI>();
+                 text.color = Color.gray;
+             }
+             
+             
         }
+
+        if (data.isBadEnding)
+        {
+            restartButton.SetActive(true);
+        }
+        else
+        {
+            restartButton.SetActive(false);
+        }
+    }
+    
+    public void RestartGame()
+    {
+        InventoryUpdate.Inventory.Clear();
+        inventoryUpdate.RenderInventory();
+        DisplayThumbnail(_firstThumbnail);
     }
 }  
    
